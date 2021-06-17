@@ -1,0 +1,78 @@
+@import "_variables";
+
+main {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./Screenshot\ 2021-06-16\ at\ 16.40.21.png');
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .intro {
+    border: 1px solid white;
+    width: 60vw;
+    height: 40vh;
+    padding: 5%;
+    #p1 {
+      font-size: 4em;
+      margin-bottom: 5%;
+      &:hover {
+        color: lightslategrey;
+        transition: 1s ease;
+      }
+    }
+    #p2 {
+      font-size: 6em;
+      margin-bottom: 5%;
+      font-weight: bolder;
+      &:hover {
+        color: lightslategrey;
+        transition: 1.3s ease;
+      }
+    }
+    #p3 {
+      font-size: 3em;
+      margin-bottom: 3%;
+      &:hover {
+        color: lightslategrey;
+        transition: 1s ease;
+      }
+    }
+
+    button {
+      font-size: 2em;
+      width: 40%;
+      height: 4vh;
+      border-radius: 40px;
+      border-style: none;
+
+      &:hover {
+        color: white;
+        background-color: lightslategrey;
+        transition: 0.3s ease;
+      }
+    }
+  }
+  .about {
+    width: 80%;
+    height: 40vh;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow:2px 2px 12px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    margin: auto;
+    position: relative;
+    h4 {
+      font-size: 2em;
+    }
+    p{
+      font-size: 2em;
+    }
+  }
+}
