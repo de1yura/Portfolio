@@ -220,6 +220,13 @@ main .intro button:hover {
     width: 56vw;
   }
 }
+footer {
+  width: 100vw;
+  height: 8vh;
+  background-color: grey;
+  margin-top: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
