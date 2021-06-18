@@ -1,7 +1,7 @@
 @import "_variables";
 
 main {
-  height: 100vh;
+  height: 92vh;
   width: 100vw;
   background-image: url('./Screenshot\ 2021-06-16\ at\ 16.40.21.png');
   background-repeat:no-repeat;
@@ -17,7 +17,7 @@ main {
     height: 40vh;
     padding: 5%;
     #p1 {
-      font-size: 4em;
+      font-size: 40px;
       margin-bottom: 5%;
       &:hover {
         color: lightslategrey;
@@ -25,7 +25,7 @@ main {
       }
     }
     #p2 {
-      font-size: 6em;
+      font-size: 60px;
       margin-bottom: 5%;
       font-weight: bolder;
       &:hover {
@@ -34,7 +34,7 @@ main {
       }
     }
     #p3 {
-      font-size: 3em;
+      font-size: 40px;
       margin-bottom: 3%;
       &:hover {
         color: lightslategrey;
@@ -43,9 +43,9 @@ main {
     }
 
     button {
-      font-size: 2em;
+      font-size: 10px;
       width: 40%;
-      height: 4vh;
+      height: 5vh;
       border-radius: 40px;
       border-style: none;
 
@@ -56,25 +56,26 @@ main {
       }
     }
   }
-  .about {
-    width: 80%;
-    height: 40vh;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow:2px 2px 12px black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 50px;
-    margin: auto;
-    position: relative;
+  
+}
 
-    h4 {
-      font-size: 2em;
-    }
-    
-    p{
-      font-size: 2em;
+@media screen and (max-width:768px){
+
+  main {
+    .intro{
+      #p1{
+        font-size: 5vw;
+      }
+      #p2{
+        font-size: 7vw;
+      }
+      #p3{
+        font-size: 6vw;
+      }
+
+      button{
+        font-size: 3vw;
+      }
     }
   }
 }
