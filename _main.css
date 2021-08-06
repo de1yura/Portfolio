@@ -1,0 +1,68 @@
+main {
+  height: 92vh;
+  width: 100vw;
+  background-image: url("./Screenshot 2021-06-16 at 16.40.21.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .intro {
+  width: 60vw;
+  height: 40vh;
+  padding: 5%;
+}
+main .intro #p1 {
+  font-size: 40px;
+  margin-bottom: 5%;
+}
+main .intro #p1:hover {
+  color: lightslategrey;
+  transition: 1s ease;
+}
+main .intro #p2 {
+  font-size: 60px;
+  margin-bottom: 5%;
+  font-weight: bolder;
+}
+main .intro #p2:hover {
+  color: lightslategrey;
+  transition: 1.3s ease;
+}
+main .intro #p3 {
+  font-size: 40px;
+  margin-bottom: 3%;
+}
+main .intro #p3:hover {
+  color: lightslategrey;
+  transition: 1s ease;
+}
+main .intro button {
+  font-size: 10px;
+  width: 40%;
+  height: 5vh;
+  border-radius: 40px;
+  border-style: none;
+}
+main .intro button:hover {
+  color: white;
+  background-color: lightslategrey;
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  main .intro #p1 {
+    font-size: 5vw;
+  }
+  main .intro #p2 {
+    font-size: 7vw;
+  }
+  main .intro #p3 {
+    font-size: 6vw;
+  }
+  main .intro button {
+    font-size: 3vw;
+  }
+}

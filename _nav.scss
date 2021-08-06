@@ -1,0 +1,95 @@
+@import "variables";
+
+nav {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  height: 8vh;
+  border-bottom: 3px solid lightslategrey;
+  background-color: $prm-color;
+
+  ul {
+    display: flex;
+    list-style: none; 
+    width: 60vw;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+
+    li{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+    
+    a{
+      text-decoration: none;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      color: $sec-color;
+      padding: 3vh;
+      width: 100%;
+      height: 8vh;
+
+      &:hover {
+        background-color: lightslategrey;
+        color: white;
+        transition: 0.6s ease;
+      }
+    }
+  }
+
+  .nav__menu {
+    display: none;
+    cursor: pointer;
+
+    div {
+      width: 25px;
+      height: 2px;
+      background-color: $sec-color;
+      margin: 5px;
+    }
+  }
+
+  label {
+    color: $sec-color;
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+
+  nav {
+
+    ul {
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: $prm-color;
+      width: 35vh;
+      flex-direction: column;
+      align-items: center;
+      transform: translateX(100%);
+      transition: 0.6s ease;
+      
+
+      a {
+        height: 100%;
+      }
+    }
+    .nav__menu {
+      display: block;
+    }
+  }
+}
+
+//this will be for js function
+.nav-click {
+  right: 0;
+}
+

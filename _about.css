@@ -1,0 +1,26 @@
+.about__container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__container .about {
+  width: 80%;
+  height: 80vh;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px;
+  margin: auto;
+  position: relative;
+}
+.about__container .about h4 {
+  font-size: 4vw;
+}
+.about__container .about p {
+  font-size: 2vw;
+}
