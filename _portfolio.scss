@@ -5,12 +5,12 @@
   height: 100vh;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.2fr 1fr 1fr;
-  grid-template-areas: "h2 h2" "a b" "c d"; 
+  grid-template-areas: "h2 h2" "portfolio__a portfolio__b" "portfolio__c portfolio__d"; 
   h2 {grid-area: h2;}
-  .a {grid-area: a;}
-  .b {grid-area: b;}
-  .c {grid-area: c;}
-  .d {grid-area: d;}
+  .portfolio__a {grid-area: portfolio__a;}
+  .portfolio__b {grid-area: portfolio__b;}
+  .portfolio__c {grid-area: portfolio__c;}
+  .portfolio__d {grid-area: portfolio__d;}
   grid-gap:1rem;
   text-align: center;
 
@@ -29,6 +29,7 @@
       width: 36vw;
       height: 41vh;
       box-shadow:4px 4px 14px black ;
+      transition: 0.3s ease;
     }
   }
 }

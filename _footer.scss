@@ -1,7 +1,30 @@
 @import "variables";
 footer {
   width: 100vw;
-  height: 8vh;
+  height: 12vh;
   background-color: grey;
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  a {
+    color: white;
+    text-decoration: none;
+    height: 50%;
+    width: 15%;
+    padding: 10px;
+    text-align: center;
+
+    &:hover {
+      font-size: large;
+    }
+  }
 }
+
+@media screen and (max-width: 768px) {
+  footer {
+    a{
+      font-size: 2.5vw;
+      width:25vw;
+    }
+  }
+}  
