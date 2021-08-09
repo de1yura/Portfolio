@@ -3,8 +3,10 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 8vh;
+  width: 100%;
   border-bottom: 3px solid lightslategrey;
   background-color: #c2c2c2;
+  position: fixed;
 }
 nav ul {
   display: flex;
@@ -73,4 +75,9 @@ nav label {
 }
 .nav-click {
   right: 0;
+}
+
+.adjuster {
+  height: 8vh;
+  width: 100%;
 }

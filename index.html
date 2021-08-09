@@ -10,9 +10,9 @@
   <nav>
     <label for="logo__sajed">Sajed</label>
     <ul>
-      <li><a href =".">Home</a></li>
-      <li><a href =".">About Me</a></li>
-      <li><a href =".">Portfolio</a></li>
+      <li><a href ="#adjuster">Home</a></li>
+      <li><a href ="#about">About Me</a></li>
+      <li><a href ="#port">Portfolio</a></li>
       <li><a href =".">Contact Me</a></li>
     </ul>
     <div class="nav__menu">
@@ -21,17 +21,36 @@
       <div class="menu__line3"></div>
     </div>
   </nav>
+
+  <div id="adjuster" class="adjuster"></div>
     
   <main>
-    <div class="intro">
+    <div id="intro" class="intro">
       <h2 id="p1">Welcome</h2>
       <h1 id="p2">TO SAJED'S PORTFOLIO</h1>
       <h2 id="p3">A Software Developer</h2>
-      <button class="continue__down">Continue</button>
+      <button onclick="scroll(0,100);" class="continue__down">Continue</button>
     </div>
   </main>
 
-  <div class="about__container">
+  <!-- animations -->
+  <div class="ani-intro">
+    <div class="ani-intro-text">
+      <h1 class="hide">
+        <span class="ani-text">Sajed's Portfolio</span>
+      </h1>
+      <h2 class="hide">
+        <span class="ani-text">Simplicity is the Soul of</span>
+      </h2>
+      <h2 class="hide">
+        <span class="ani-text">Efficiency.</span>
+      </h2>
+    </div>
+  </div>
+  <div class="slider"></div>
+  <!-- ----------- -->
+
+  <div id="about" class="about__container">
     <div class = "about">
       <h4>About me</h4>
       <p>Hello, my name is Sajed Azizi and I am a training developer. This is my portfolio page for _nology where i display the skills i have learnt through portraying my projects in this responsive website.  </p>
@@ -40,7 +59,7 @@
   </div>
 
   
-  <div class="portfolio">
+  <div id="port" class="portfolio">
     <h2 class="ph">Portfolio</h2>
 
   <a href="https://de1yura.github.io/calculator/" alt = "link down">

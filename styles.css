@@ -4,8 +4,10 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 8vh;
+  width: 100%;
   border-bottom: 3px solid lightslategrey;
   background-color: #c2c2c2;
+  position: fixed;
 }
 nav ul {
   display: flex;
@@ -74,6 +76,11 @@ nav label {
 }
 .nav-click {
   right: 0;
+}
+
+.adjuster {
+  height: 8vh;
+  width: 100%;
 }
 
 main {
@@ -162,7 +169,6 @@ main .intro button:hover {
   justify-content: space-between;
   padding: 50px;
   margin: auto;
-  position: relative;
 }
 .about__container .about h4 {
   font-size: 4vw;
@@ -259,4 +265,40 @@ footer a:hover {
   padding: 0;
   box-sizing: border-box;
   font-family: "Archivo", sans-serif;
+}
+
+.ani-intro {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ani-intro-text {
+  color: white;
+  font-size: 3rem;
+}
+
+.slider {
+  background: lightslategray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.hide {
+  background: black;
+  overflow: hidden;
+}
+.hide > span {
+  transform: translateY(100%);
+  display: inline-block;
 }

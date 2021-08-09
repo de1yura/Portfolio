@@ -5,8 +5,10 @@ nav {
   justify-content: space-around; 
   align-items: center;
   height: 8vh;
+  width: 100%;
   border-bottom: 3px solid lightslategrey;
   background-color: $prm-color;
+  position: fixed;
 
   ul {
     display: flex;
@@ -93,3 +95,7 @@ nav {
   right: 0;
 }
 
+.adjuster{
+  height: 8vh;
+  width: 100%;
+}
