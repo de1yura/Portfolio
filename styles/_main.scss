@@ -3,7 +3,7 @@
 main {
   height: 92vh;
   width: 100vw;
-  background-image: url('./Screenshot\ 2021-06-16\ at\ 16.40.21.png');
+  background-image: url('../images/Screenshot\ 2021-06-16\ at\ 16.40.21.png');
   background-repeat:no-repeat;
   background-size: cover;
   background-position: center;
@@ -42,7 +42,7 @@ main {
     }
 
     button {
-      font-size: 10px;
+      font-size: 1em;
       width: 40%;
       height: 5vh;
       border-radius: 40px;
@@ -50,8 +50,9 @@ main {
 
       &:hover {
         color: white;
-        background-color: lightslategrey;
+        background-color: lightslategray;
         transition: 0.3s ease;
+        font-size: 1em;
       }
     }
   }

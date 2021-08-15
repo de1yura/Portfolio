@@ -24,6 +24,17 @@
     width: 35vw;
     height: 40vh;
     margin: auto;
+    margin-top: 5px;
+    align-items: center;
+
+    .calculator {
+      width: 50%;
+      height: 100%;
+    }
+    .chess{
+      width:60%;
+      height: 100%;
+    }
 
     &:hover {
       width: 36vw;
@@ -32,6 +43,13 @@
       transition: 0.3s ease;
     }
   }
+  a{
+    text-decoration: none;
+  }
+  p{
+    color: lightslategray;
+  }
+
 }
 
 @media screen and (max-width: 768px) {

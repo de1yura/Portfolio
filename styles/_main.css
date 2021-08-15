@@ -1,7 +1,7 @@
 main {
   height: 92vh;
   width: 100vw;
-  background-image: url("./Screenshot 2021-06-16 at 16.40.21.png");
+  background-image: url("../images/Screenshot 2021-06-16 at 16.40.21.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -40,7 +40,7 @@ main .intro #p3:hover {
   transition: 1s ease;
 }
 main .intro button {
-  font-size: 10px;
+  font-size: 1em;
   width: 40%;
   height: 5vh;
   border-radius: 40px;
@@ -48,8 +48,9 @@ main .intro button {
 }
 main .intro button:hover {
   color: white;
-  background-color: lightslategrey;
+  background-color: lightslategray;
   transition: 0.3s ease;
+  font-size: 1em;
 }
 
 @media screen and (max-width: 768px) {

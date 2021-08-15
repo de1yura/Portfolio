@@ -1,5 +1,14 @@
 "use strict";
 
+var navClick = function navClick() {
+  var menu = document.querySelector(".nav__menu");
+  var navigation = document.querySelector(".nav__items");
+  menu.addEventListener('click', function () {
+    navigation.classList.toggle('navClick');
+  });
+};
+
+navClick();
 var tl = gsap.timeline({
   defaults: {
     ease: 'power1.out'

@@ -9,11 +9,11 @@
 <body>
   <nav>
     <label for="logo__sajed">Sajed</label>
-    <ul>
+    <ul class="nav__items">
       <li><a href ="#adjuster">Home</a></li>
       <li><a href ="#about">About Me</a></li>
       <li><a href ="#port">Portfolio</a></li>
-      <li><a href =".">Contact Me</a></li>
+      <li><a href ="#">Contact Me</a></li>
     </ul>
     <div class="nav__menu">
       <div class="menu__line1"></div>
@@ -29,12 +29,12 @@
       <h2 id="p1">Welcome</h2>
       <h1 id="p2">TO SAJED'S PORTFOLIO</h1>
       <h2 id="p3">A Software Developer</h2>
-      <button onclick="scroll(0,100);" class="continue__down">Continue</button>
+      <a href="#about"><button class="continue__down">Continue</button></a>
     </div>
   </main>
 
   <!-- animations -->
-  <div class="ani-intro">
+  <!-- <div class="ani-intro">
     <div class="ani-intro-text">
       <h1 class="hide">
         <span class="ani-text">Sajed's Portfolio</span>
@@ -47,7 +47,7 @@
       </h2>
     </div>
   </div>
-  <div class="slider"></div>
+  <div class="slider"></div> -->
   <!-- ----------- -->
 
   <div id="about" class="about__container">
@@ -62,24 +62,28 @@
   <div id="port" class="portfolio">
     <h2 class="ph">Portfolio</h2>
 
-  <a href="https://de1yura.github.io/calculator/" alt = "link down">
-    <div class="portfolio__box portfolio__a">
-      <p class="portfolio__title">portfolio 1</p>
-    </div>
-  </a>
-  <a href="https://de1yura.github.io/JS-Game/" alt="link down">
-    <div class="portfolio__box portfolio__b">
-      <p class="portfolio__title">portfolio 2</p>
-    </div>
-  </a>
+    <a href="https://de1yura.github.io/calculator/" alt = "link down">
+      <p class="portfolio__title">Calculator</p>
+      <div class="portfolio__box portfolio__a">
+        <img class="calculator" src="./images/calculator.png" alt="calculator">
+      </div>
+    </a>
 
-    <div class="portfolio__box portfolio__c">
-      <p class="portfolio__title">portfolio 3</p>
-    </div>
 
-    <div class="portfolio__box portfolio__d">
-      <p class="portfolio__title">portfolio 4</p>
-    </div>
+    <a href="https://de1yura.github.io/JS-Game/" alt="link down">
+      <p class="portfolio__title">Chess Game</p>
+      <div class="portfolio__box portfolio__b">
+        <img class="chess" src="./images/chess.png" alt="chess">
+      </div>
+    </a>
+
+      <div class="portfolio__box portfolio__c">
+        <p class="portfolio__title">portfolio 3</p>
+      </div>
+
+      <div class="portfolio__box portfolio__d">
+        <p class="portfolio__title">portfolio 4</p>
+      </div>
 
   </div>
 

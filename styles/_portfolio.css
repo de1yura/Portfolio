@@ -32,12 +32,28 @@
   width: 35vw;
   height: 40vh;
   margin: auto;
+  margin-top: 5px;
+  align-items: center;
+}
+.portfolio .portfolio__box .calculator {
+  width: 50%;
+  height: 100%;
+}
+.portfolio .portfolio__box .chess {
+  width: 60%;
+  height: 100%;
 }
 .portfolio .portfolio__box:hover {
   width: 36vw;
   height: 41vh;
   box-shadow: 4px 4px 14px black;
   transition: 0.3s ease;
+}
+.portfolio a {
+  text-decoration: none;
+}
+.portfolio p {
+  color: lightslategray;
 }
 
 @media screen and (max-width: 768px) {

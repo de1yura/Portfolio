@@ -73,8 +73,8 @@ nav label {
     display: block;
   }
 }
-.nav-click {
-  right: 0;
+.navClick {
+  transform: translate(0);
 }
 
 .adjuster {
