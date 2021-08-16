@@ -12,7 +12,9 @@
   box-sizing: border-box;
   font-family: $prm-font;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 
 .ani-intro{
   background: black;
@@ -51,6 +53,3 @@
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}

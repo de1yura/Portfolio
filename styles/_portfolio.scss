@@ -28,7 +28,7 @@
     align-items: center;
 
     .calculator {
-      width: 50%;
+      width: 45%;
       height: 100%;
     }
     .chess{
@@ -58,10 +58,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200vh;
+    height: auto;
 
     .portfolio__box{
       width: 55vw;
+      height: 20vh;
       &:hover{
         width: 56vw;
       }

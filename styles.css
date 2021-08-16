@@ -217,7 +217,7 @@ main .intro button:hover {
   align-items: center;
 }
 .portfolio .portfolio__box .calculator {
-  width: 50%;
+  width: 45%;
   height: 100%;
 }
 .portfolio .portfolio__box .chess {
@@ -243,10 +243,11 @@ main .intro button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200vh;
+    height: auto;
   }
   .portfolio .portfolio__box {
     width: 55vw;
+    height: 20vh;
   }
   .portfolio .portfolio__box:hover {
     width: 56vw;
@@ -285,6 +286,10 @@ footer a:hover {
   font-family: "Archivo", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .ani-intro {
   background: black;
   position: fixed;
@@ -319,8 +324,4 @@ footer a:hover {
 .hide > span {
   transform: translateY(100%);
   display: inline-block;
-}
-
-html {
-  scroll-behavior: smooth;
 }
