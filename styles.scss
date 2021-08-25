@@ -12,6 +12,12 @@
   box-sizing: border-box;
   font-family: $prm-font;
 }
+
+// .animate__animated.animate__fadeInDown {
+//   --animate-duration: 1s;
+
+// }
+
 html {
   scroll-behavior: smooth;
 }
@@ -53,3 +59,75 @@ html {
   }
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border: black 1px solid;
+
+  .contact_container{
+    height: 80vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    h4{
+      padding: 10px;
+      box-shadow: 0 4px 2px -2px gray;
+    }
+
+    .email{
+      display: block;
+    }
+    .message{
+      display: block;
+    }
+    .send{
+      display: block;
+    }
+
+  }
+ 
+}
+
+// Contact Button
+.but {
+  border-radius:50px;
+  background-color: lightslategray;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5vw;
+  padding: 0;
+  width: 15vw;
+  height: 5vh;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+
+  cursor: pointer;
+  // display: inline-block;
+  position: relative;
+  transition: 0.5s;
+
+  &::after{
+    content: '»';
+    position: relative;
+    opacity: 0; 
+    right: -40%;
+    transition: 0.5s;
+  }
+  &:hover{
+      padding-right: 24px;
+      padding-left:8px;
+  }
+
+  &:hover::after{
+    opacity: 1;
+    right: -20%;
+  }
+}

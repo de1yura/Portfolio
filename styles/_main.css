@@ -40,7 +40,7 @@ main .intro #p3:hover {
   transition: 1s ease;
 }
 main .intro button {
-  font-size: 1em;
+  font-size: 2vw;
   width: 40%;
   height: 5vh;
   border-radius: 40px;
@@ -50,7 +50,7 @@ main .intro button:hover {
   color: white;
   background-color: lightslategray;
   transition: 0.3s ease;
-  font-size: 1em;
+  font-size: 2vw;
 }
 
 @media screen and (max-width: 768px) {

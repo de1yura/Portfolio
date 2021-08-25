@@ -1,6 +1,6 @@
 .portfolio {
   display: grid;
-  height: 100vh;
+  height: 110vh;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.2fr 1fr 1fr;
   grid-template-areas: "h2 h2" "portfolio__a portfolio__b" "portfolio__c portfolio__d";
@@ -40,8 +40,19 @@
   height: 100%;
 }
 .portfolio .portfolio__box .chess {
+  margin-top: 2.5%;
   width: 60%;
-  height: 100%;
+  height: 90%;
+}
+.portfolio .portfolio__box .morse {
+  width: 70%;
+  margin-top: 2.5%;
+  height: 90%;
+}
+.portfolio .portfolio__box .client {
+  width: 90%;
+  margin-top: 2.5%;
+  height: 90%;
 }
 .portfolio .portfolio__box:hover {
   width: 36vw;

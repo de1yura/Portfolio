@@ -1,26 +1,99 @@
+@charset "UTF-8";
 .about__container {
   height: 100vh;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .about__container .about {
   width: 80%;
-  height: 80vh;
+  height: 50vh;
   background-color: white;
   border-radius: 20px;
   box-shadow: 2px 2px 12px black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   padding: 50px;
-  margin: auto;
+  margin-top: 5%;
 }
 .about__container .about h4 {
   font-size: 4vw;
 }
 .about__container .about p {
   font-size: 2vw;
+}
+.about__container .about .two_buttons {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__container .about .two_buttons .skills_but {
+  border-radius: 50px;
+  background-color: lightslategray;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5vw;
+  padding: 0;
+  width: 15vw;
+  height: 5vh;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+}
+.about__container .about .two_buttons .skills_but::after {
+  content: "»";
+  position: relative;
+  opacity: 0;
+  right: -40%;
+  transition: 0.5s;
+}
+.about__container .about .two_buttons .skills_but:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+.about__container .about .two_buttons .skills_but:hover::after {
+  opacity: 1;
+  right: -20%;
+}
+.about__container .about .two_buttons .project_but {
+  border-radius: 50px;
+  background-color: lightslategray;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5vw;
+  padding: 0;
+  width: 15vw;
+  height: 5vh;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+}
+.about__container .about .two_buttons .project_but::after {
+  content: "»";
+  position: relative;
+  opacity: 0;
+  right: -40%;
+  transition: 0.5s;
+}
+.about__container .about .two_buttons .project_but:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+.about__container .about .two_buttons .project_but:hover::after {
+  opacity: 1;
+  right: -20%;
 }

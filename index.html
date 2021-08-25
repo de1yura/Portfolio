@@ -5,15 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
   <nav>
-    <label for="logo__sajed">Sajed</label>
+    <a href="#adjuster"><label for="logo__sajed">Sajed</label></a>
     <ul class="nav__items">
       <li><a href ="#adjuster">Home</a></li>
-      <li><a href ="#about">About Me</a></li>
-      <li><a href ="#port">Portfolio</a></li>
-      <li><a href ="#">Contact Me</a></li>
+      <li><a href ="#about">About</a></li>
+      <li><a href ="#about">Skills</a></li>
+      <li><a href ="#port">Projects</a></li>
+      <li><a href ="#contact">Contact Me</a></li>
     </ul>
     <div class="nav__menu">
       <div class="menu__line1"></div>
@@ -26,10 +31,10 @@
     
   <main>
     <div id="intro" class="intro">
-      <h2 id="p1">Welcome</h2>
-      <h1 id="p2">TO SAJED'S PORTFOLIO</h1>
-      <h2 id="p3">A Software Developer</h2>
-      <a href="#about"><button class="continue__down">Continue</button></a>
+      <h2 class="animate__animated animate__fadeInDown animate__delay-3s" id="p1">Welcome</h2>
+      <h1 class="animate__animated animate__fadeInDown animate__delay-3s" id="p2">TO SAJED'S PORTFOLIO</h1>
+      <h2 class="animate__animated animate__fadeInDown animate__delay-3s" id="p3">A Software Developer</h2>
+      <a class="animate__animated animate__fadeInDown animate__delay-3s" href="#about"><button class="continue__down">Continue</button></a>
     </div>
   </main>
 
@@ -47,22 +52,26 @@
       </h2>
     </div>
   </div>
-  <div class="slider"></div>
-  <!-- ----------- -->
+  <div class="slider"></div> 
+
 
   <div id="about" class="about__container">
+    <h2>About me</h2>
     <div class = "about">
-      <h4>About me</h4>
-      <p>Hello, my name is Sajed Azizi and I am a training developer. This is my portfolio page for _nology where i display the skills i have learnt through portraying my projects in this responsive website.  </p>
-      <p> text text text text text texttext text texttext text texttext text texttext text texttext text texttext text texttext text text</p>
+      <p>Hello, my name is Sajed Azizi and I am a software developer that has undertaken <a href="https://nology.io/" target="_blank">_nology's</a> full-stack course. This is my portfolio page to demonstrate the skills I have learnt through portraying my projects in this responsive website.</p>
+      <p>Feel free to explore the page and contact me for any queries down below.</p>
+      <div class="two_buttons">
+       <a href="#skills"><button class="skills_but">Skills</button></a> 
+       <a href="#port"><button class="project_but">Projects</button></a> 
+      </div>
     </div>
   </div>
 
   
   <div id="port" class="portfolio">
-    <h2 class="ph">Portfolio</h2>
+    <h2 class="ph">Projects</h2>
 
-    <a href="https://de1yura.github.io/calculator/" alt = "link down">
+    <a href="https://de1yura.github.io/calculator/" target="_blank" alt = "link down">
       <p class="portfolio__title">Calculator</p>
       <div class="portfolio__box portfolio__a">
         <img class="calculator" src="./images/calculator.png" alt="calculator">
@@ -70,22 +79,42 @@
     </a>
 
 
-    <a href="https://de1yura.github.io/JS-Game/" alt="link down">
+    <a href="https://de1yura.github.io/JS-Game/" target="_blank" alt="link down">
       <p class="portfolio__title">Chess Game</p>
       <div class="portfolio__box portfolio__b">
         <img class="chess" src="./images/chess.png" alt="chess">
       </div>
     </a>
-
+    
+    <a href="https://de1yura.github.io/morse-code/" target="_blank" alt="link down">
+      <p class="portfolio__title">Morse Code</p>
       <div class="portfolio__box portfolio__c">
-        <p class="portfolio__title">portfolio 3</p>
+        <img class="morse" src="./images/morse.png" alt="Morse picture">
       </div>
+    </a>
       
+    <a href="https://nology-login.web.app" target="_blank" alt="link down">
+      <p class="portfolio__title">Client Project</p>
       <div class="portfolio__box portfolio__d">
-        <p class="portfolio__title">portfolio 4</p>
+        <img class="client" src="./images/client.png" alt="client project picture">
       </div>
+    </a>
+  </div>
+  <!-- --------contact--------- -->
+  <div id="contact" class="contact">
+    <h2>Contact</h2>
+    <div class="contact_container">
+
+      <h4>If you want to reach out, please email me using the link below</h4>
+
+      <a href="mailto:azizisajed@hotmail.co.uk" >
+        <button class="but"><span>Contact</span></button>
+      </a>
+  </div>
 
   </div>
+
+  <!-- --------footer--------- -->
 
   <footer>
     <a href="#top">Back to Top</a>
