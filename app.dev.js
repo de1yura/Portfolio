@@ -1,5 +1,10 @@
 "use strict";
 
+var darkTheme = document.querySelector(".theme");
+darkTheme.addEventListener("click", function () {
+  return document.body.classList.toggle("dark-theme");
+});
+
 var navClick = function navClick() {
   var menu = document.querySelector(".nav__menu");
   var navigation = document.querySelector(".nav__items");

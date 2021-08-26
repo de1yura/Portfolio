@@ -1,3 +1,7 @@
+const darkTheme = document.querySelector(".theme")
+
+darkTheme.addEventListener("click", ()=> document.body.classList.toggle("dark-theme"))
+
 const navClick = () => {
   const menu = document.querySelector(".nav__menu");
   const navigation = document.querySelector(".nav__items");

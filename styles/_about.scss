@@ -7,20 +7,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 
   .about {
     width: 80%;
     height: 50vh;
-    background-color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     border-radius: 20px;
-    box-shadow:2px 2px 12px black;
+    box-shadow:2px 2px 12px var(--secondary-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    margin-top: 5%;
+    margin-top:5%;
   
     h4 {
       font-size: 4vw;

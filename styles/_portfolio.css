@@ -1,4 +1,6 @@
 .portfolio {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   display: grid;
   height: 110vh;
   grid-template-columns: 1fr 1fr;
@@ -23,9 +25,9 @@
   grid-area: portfolio__d;
 }
 .portfolio .portfolio__box {
-  background-color: white;
+  background-color: var(--primary-color);
   border-radius: 20px;
-  box-shadow: 2px 2px 12px black;
+  box-shadow: 2px 2px 12px var(--secondary-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -57,7 +59,7 @@
 .portfolio .portfolio__box:hover {
   width: 36vw;
   height: 41vh;
-  box-shadow: 4px 4px 14px black;
+  box-shadow: 4px 4px 14px var(--secondary-color);
   transition: 0.3s ease;
 }
 .portfolio a {
