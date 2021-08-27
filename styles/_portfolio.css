@@ -2,7 +2,8 @@
   background-color: var(--primary-color);
   color: var(--secondary-color);
   display: grid;
-  height: 110vh;
+  height: 170vh;
+  padding-bottom: 5vh;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.2fr 1fr 1fr;
   grid-template-areas: "h2 h2" "portfolio__a portfolio__b" "portfolio__c portfolio__d";
@@ -55,6 +56,13 @@
   width: 90%;
   margin-top: 2.5%;
   height: 90%;
+  border-radius: 10px;
+}
+.portfolio .portfolio__box .punk {
+  width: 90%;
+  margin-top: 2.5%;
+  height: 90%;
+  border-radius: 10px;
 }
 .portfolio .portfolio__box:hover {
   width: 36vw;
@@ -82,6 +90,6 @@
     height: 20vh;
   }
   .portfolio .portfolio__box:hover {
-    width: 56vw;
+    width: 21vw;
   }
 }
