@@ -16,7 +16,7 @@ nav ul {
   width: 60vw;
   justify-content: space-around;
   align-items: center;
-  height: 8vh;
+  height: 100%;
 }
 nav ul li {
   display: flex;

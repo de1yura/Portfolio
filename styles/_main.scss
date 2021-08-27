@@ -5,14 +5,11 @@ main {
   width: 100vw;
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  //background-image: url('../images/Screenshot\ 2021-06-16\ at\ 16.40.21.png');
   background-repeat:no-repeat;
-  background-size: cover;
   background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
+  background-size: cover;
+  background-image: url('../images/background.png');
+ 
   .intro {
     width: 60vw;
     height: 40vh;
@@ -49,10 +46,12 @@ main {
       height: 5vh;
       border-radius: 40px;
       border-style: none;
+      background-color: lightslategray;
+      color: var(--primary-color);
 
       &:hover {
-        color: var(--primary-color);
-        background-color: lightslategray;
+        color: var(--secondary-color);
+        background-color: var(--tertiary-color);
         transition: 0.3s ease;
         font-size: 2vw;
       }
