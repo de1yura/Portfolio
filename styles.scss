@@ -222,3 +222,85 @@ input:checked + .slider:before {
     margin-right: 5px;
   }
 }
+
+// SKILLS ICONS CSS
+
+.skills{
+  width: 100vw;
+  height: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  >h2{color: var(--secondary-color);}
+}
+
+.skills_container {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+.skills_wrap .skills_button {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  margin: 0 5px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 50px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+}
+
+.skills_wrap .skills_button {
+  &:hover{
+    width: 300px;
+  }
+}
+
+
+.skills_wrap .skills_button .skill_icon {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+.skills_wrap .skills_button .skill_icon i {
+  font-size: 40px;
+  line-height: 100px;
+}
+
+.skills_wrap .skills_button span{
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 100px;
+  margin-left: 10px;
+}
+
+.skills_wrap .skills_button .skill_icon svg {
+  font-size: 40px;
+  line-height: 60px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.skills_wrap .skills_button .jest {
+  height: 100%;
+  display: inline-block;
+}
+
+.skills_wrap .jest_button:hover > .jest{
+    position: relative;
+    top: -20%;
+}
+
+
