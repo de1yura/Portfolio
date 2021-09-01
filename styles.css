@@ -614,6 +614,7 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
   background-color: var(--primary-color);
+  flex-wrap: wrap;
 }
 
 .skills_wrap .skills_button {
