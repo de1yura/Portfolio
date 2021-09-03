@@ -1,5 +1,4 @@
 .portfolio {
-  background-color: var(--primary-color);
   color: var(--secondary-color);
   display: grid;
   height: 170vh;
@@ -90,6 +89,7 @@
     height: 20vh;
   }
   .portfolio .portfolio__box:hover {
-    width: 21vw;
+    width: 58vw;
+    height: 23vh;
   }
 }

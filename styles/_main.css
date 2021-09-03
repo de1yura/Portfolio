@@ -1,12 +1,7 @@
 main {
   height: 92vh;
   width: 100vw;
-  background-color: var(--primary-color);
   color: var(--secondary-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("/images/background.png");
 }
 main .intro {
   width: 60vw;

@@ -102,12 +102,7 @@ nav a label:hover {
 main {
   height: 92vh;
   width: 100vw;
-  background-color: var(--primary-color);
   color: var(--secondary-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../images/background.PNG");
 }
 main .intro {
   width: 60vw;
@@ -176,7 +171,6 @@ main .intro button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--primary-color);
   color: var(--secondary-color);
 }
 .about__container .about {
@@ -271,7 +265,6 @@ main .intro button:hover {
 }
 
 .portfolio {
-  background-color: var(--primary-color);
   color: var(--secondary-color);
   display: grid;
   height: 170vh;
@@ -362,10 +355,12 @@ main .intro button:hover {
     height: 20vh;
   }
   .portfolio .portfolio__box:hover {
-    width: 21vw;
+    width: 58vw;
+    height: 23vh;
   }
 }
 footer {
+  border-top: 3px solid lightslategrey;
   width: 100vw;
   height: 12vh;
   background-color: var(--tertiary-color);
@@ -396,6 +391,11 @@ footer a:hover {
   box-sizing: border-box;
   font-family: "Archivo", sans-serif;
   transition: background-color 1s, color 1s;
+}
+
+body {
+  background-image: linear-gradient(-60deg, var(--tertiary-color) 50%, var(--primary-color) 50%);
+  background-attachment: fixed;
 }
 
 :root {
@@ -458,7 +458,6 @@ html {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: var(--primary-color);
   color: var(--secondary-color);
 }
 .contact .contact_container {
@@ -468,7 +467,6 @@ html {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--primary-color);
 }
 .contact .contact_container h4 {
   padding: 10px;
@@ -596,24 +594,23 @@ input:checked + .slider:before {
 
 .skills {
   width: 100vw;
-  height: 35vw;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--primary-color);
 }
 .skills > h2 {
   color: var(--secondary-color);
+  margin-bottom: 5%;
 }
 
 .skills_container {
-  width: 100vw;
+  width: 50vw;
   height: 30vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-color: var(--primary-color);
   flex-wrap: wrap;
 }
 
@@ -670,4 +667,12 @@ input:checked + .slider:before {
 .skills_wrap .jest_button:hover > .jest {
   position: relative;
   top: -20%;
+}
+
+@media screen and (max-width: 768px) {
+  .skills_container {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+  }
 }

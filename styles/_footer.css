@@ -1,4 +1,5 @@
 footer {
+  border-top: 3px solid lightslategrey;
   width: 100vw;
   height: 12vh;
   background-color: var(--tertiary-color);
