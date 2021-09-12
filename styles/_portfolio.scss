@@ -29,7 +29,40 @@
     margin: auto;
     margin-top: 5px;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-top: 2.5%;
+    
+    .qw{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      transform: translateY(100%);
+      transition: all 0.4s ease;
+      visibility: hidden;
+      content: '';
+      background: rgba(140, 146, 172, 0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      padding: 10px;
+    }
 
+    &:hover .qw{
+      visibility: visible;
+      transform: translateX(0%);
+    }
+
+    .punk{
+      margin-top: 2.5%;
+      width:90%;
+      height: 90%;
+      border-radius: 10px;
+    }
     .calculator {
       width: 45%;
       height: 100%;
@@ -45,12 +78,6 @@
       height: 90%;
     }
     .client{
-      width:90%;
-      margin-top: 2.5%;
-      height: 90%;
-      border-radius: 10px;
-    }
-    .punk{
       width:90%;
       margin-top: 2.5%;
       height: 90%;
