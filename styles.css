@@ -471,6 +471,7 @@ html {
 .hide {
   background: black;
   overflow: hidden;
+  z-index: 10;
 }
 .hide > span {
   transform: translateY(100%);
@@ -541,7 +542,6 @@ html {
   right: -20%;
 }
 
-/* The switch - the box around the slider */
 .switch {
   position: relative;
   display: inline-block;

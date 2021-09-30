@@ -52,9 +52,6 @@ html {
 .ani-intro-text{
   color: white;
   font-size: 3rem;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
 }
 
 .slider{
@@ -70,6 +67,7 @@ html {
 .hide{
   background: black;
   overflow: hidden;
+  z-index: 10;
 
   >span{
     transform: translateY(100%);
@@ -155,7 +153,7 @@ html {
 }
 
 
-/* The switch - the box around the slider */
+//TOGGLE BUTTON
 .switch {
   position: relative;
   display: inline-block;
