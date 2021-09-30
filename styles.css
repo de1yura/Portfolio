@@ -290,7 +290,21 @@ main .intro button:hover {
 .portfolio .portfolio__d {
   grid-area: portfolio__d;
 }
-.portfolio .portfolio__box {
+.portfolio .project_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio .project_box .gitlink {
+  margin: 5px;
+  height: 5vw;
+  width: 5vw;
+}
+.portfolio .project_box .gitlink .glink {
+  font-size: 2.5vw;
+  color: black;
+}
+.portfolio .project_box .portfolio__box {
   background-color: var(--primary-color);
   border-radius: 20px;
   box-shadow: 2px 2px 12px var(--secondary-color);
@@ -307,7 +321,7 @@ main .intro button:hover {
   transition: all 0.3s ease;
   margin-top: 2.5%;
 }
-.portfolio .portfolio__box .qw {
+.portfolio .project_box .portfolio__box .qw {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -317,44 +331,55 @@ main .intro button:hover {
   transform: translateY(100%);
   transition: all 0.4s ease;
   visibility: hidden;
-  content: "";
   background: rgba(140, 146, 172, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
 }
-.portfolio .portfolio__box:hover .qw {
+.portfolio .project_box .portfolio__box .qw .overlay-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio .project_box .portfolio__box:hover .qw {
   visibility: visible;
   transform: translateX(0%);
 }
-.portfolio .portfolio__box .punk {
+.portfolio .project_box .portfolio__box .punk {
   margin-top: 2.5%;
   width: 90%;
   height: 90%;
   border-radius: 10px;
 }
-.portfolio .portfolio__box .calculator {
+.portfolio .project_box .portfolio__box .fullstack {
+  margin-top: 2.5%;
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
+}
+.portfolio .project_box .portfolio__box .calculator {
   width: 45%;
   height: 100%;
 }
-.portfolio .portfolio__box .chess {
+.portfolio .project_box .portfolio__box .chess {
   margin-top: 2.5%;
   width: 60%;
   height: 90%;
 }
-.portfolio .portfolio__box .morse {
+.portfolio .project_box .portfolio__box .morse {
   width: 70%;
   margin-top: 2.5%;
   height: 90%;
 }
-.portfolio .portfolio__box .client {
+.portfolio .project_box .portfolio__box .client {
   width: 90%;
   margin-top: 2.5%;
   height: 90%;
   border-radius: 10px;
 }
-.portfolio .portfolio__box:hover {
+.portfolio .project_box .portfolio__box:hover {
   width: 36vw;
   height: 41vh;
   box-shadow: 4px 4px 14px var(--secondary-color);
