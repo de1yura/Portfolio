@@ -36,7 +36,7 @@
 }
 .portfolio .project_box .gitlink .glink {
   font-size: 2.5vw;
-  color: black;
+  color: var(--secondary-color);
 }
 .portfolio .project_box .portfolio__box {
   background-color: var(--primary-color);
